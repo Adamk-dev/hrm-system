@@ -1,13 +1,24 @@
 # hrm-system
 # Frontend
+```bash
 cd frontend
+```
+```bash
 npm install
+```
+```bash
 npm run dev
-
+```
 # Backtend
+```bash
 cd backtend
+```
+```bash
 npm install
+```
+```bash
 npm run dev
+```
 
 ![dashboard](https://user-images.githubusercontent.com/78487148/202519215-cbbf047b-d6cc-41fb-9bdd-1ae997cd517d.png)
 ![forgetpassword](https://user-images.githubusercontent.com/78487148/202519220-cebe48c7-622e-4fe6-a336-172a1456dc40.png)
