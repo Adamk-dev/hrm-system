@@ -1,0 +1,28 @@
+.container {
+  background-color: #f8f9fa !important;
+  display: flex;
+  // justify-content: center;
+  min-height: 100vh !important;
+  margin: 0;
+  padding: 0;
+
+  // .item{
+
+  // }
+  .sidebar-item {
+    position: static;
+  }
+
+  .content-container {
+    .content-item {
+      display: flex;
+      flex-direction: column;
+
+      .navbar-grid {
+      }
+
+      .content-grid {
+      }
+    }
+  }
+}

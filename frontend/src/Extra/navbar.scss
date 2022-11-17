@@ -1,0 +1,109 @@
+header {
+    // margin-top: 3rem;
+    border-radius: 1rem;
+    background-color: #f8f9fa !important;
+    box-shadow: none !important;
+    width: 98% !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 111;
+    margin-top: 30px;
+
+
+}
+
+.admin-dropdown {
+
+    color: black !important;
+}
+
+.searchcon {
+
+    width: 30rem !important;
+    background-color: #eeeeee !important;
+
+
+
+    .searchicon {
+        color: #9ea0a4 !important;
+        font-size: 2rem !important;
+    }
+
+    .searchbox {
+        color: #9ea0a4 !important;
+        font-size: 1.4rem !important;
+
+    }
+}
+
+
+button {
+    span {
+
+        color: black;
+        font-size: 1rem !important;
+
+
+        svg {
+            font-size: 3rem !important;
+
+        }
+    }
+}
+
+.MuiButtonBase-root {
+    svg {
+        font-size: 3rem !important;
+        color: black;
+
+    }
+
+
+
+}
+
+.dropdownMenu {
+    top: 6% !important;
+    left: -2% !important;
+
+
+
+
+}
+
+.userImgCon {
+    padding: 0;
+
+    span {
+
+
+        .userimage {
+            border-radius: 50%;
+            position: relative !important;
+            width: 6rem;
+        }
+
+        .dot {
+            border-radius: 50%;
+            position: relative !important;
+            width: 2rem;
+
+            right: 25%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .css-i4bv87-MuiSvgIcon-root {
+        // display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .searchicon {
+
+        font-size: 2rem !important;
+    }
+}

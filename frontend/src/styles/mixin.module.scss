@@ -1,0 +1,54 @@
+@mixin allCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin horizontalcenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin verticallycenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin horizontallysapce {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+@mixin positions($position, $top, $bottom, $left, $right) {
+
+  position: $position;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+@mixin button($padding ,$border-radius ){
+
+  padding: $padding;
+  border-radius: $border-radius;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: $primary-color;
+  color: $white;
+  cursor: pointer;
+}
+
+@mixin input( $padding)
+{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 0.5px solid #555;
+  padding: $padding;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}

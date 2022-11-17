@@ -1,0 +1,154 @@
+.sidebar-div {
+    padding: 3rem !important;
+    border-radius: 1rem;
+    height: 90vh !important;
+    border: 1px solid white;
+
+    // span {
+    //     font-size: 6.8rem;
+    //     margin: .3rem 0;
+    //     font-size: 1.6rem !important;
+
+    // }
+    .headingcon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        span {
+
+
+            img {
+
+                padding: 1rem 0;
+                border-radius: 50%;
+                width: 6rem;
+            }
+        }
+
+        .taskheading {
+            font-size: 2.6rem;
+            color: white;
+            margin: auto;
+        }
+    }
+}
+
+.icons {
+
+    width: 2.5rem;
+}
+
+
+.side-navigation-panel-select-option-text {
+    color: white !important;
+    padding: 0 3rem;
+    font-size: 1.8rem;
+
+
+}
+
+// .side-navigation-panel-select-option-wrap {
+//     color: greenyellow !important;
+// }
+.side-navigation-panel-select:hover {
+    background-color: #283686 !important;
+}
+
+.side-navigation-panel-select-wrap:hover {
+    opacity: 1 !important;
+    background-color: #283686 !important;
+
+}
+
+
+
+
+.material-icons {
+    color: white !important;
+    font-size: 2.4rem !important;
+}
+
+.side-navigation-panel-select-option-icon {
+
+    color: white !important;
+}
+
+.side-navigation-panel-select-inner-option {
+    color: white !important;
+
+    background-color: #283686 !important;
+
+    span {
+        font-size: 1.5rem !important;
+        padding-top: .3rem;
+
+    }
+
+    &:hover {
+        background-color: #8c96d6 !important;
+    }
+}
+
+
+
+
+.side-navigation-panel-select-inner-option-selected {
+    // color: white !important;
+    color: #e98a1d !important;
+
+
+
+}
+
+
+
+.side-navigation-panel-select-option-selected {
+    color: white !important;
+    // background-color: #34ab45 !important;
+    background-color: #283686 !important;
+
+}
+
+
+// .side-navigation-panel-select-option:visited {
+
+
+//     span {
+//         // color: #e98a1d !important;
+//     }
+// }
+
+.side-navigation-panel-select-option:hover {
+
+    background-color: #8c96d6 !important;
+
+}
+
+
+
+.side-navigation-panel-select-inner-wrap {
+
+    background-color: #283686 !important;
+
+
+    span:hover {
+        color: white !important;
+    }
+
+    span:hover {
+        color: #e98a1d !important;
+    }
+
+}
+
+.side-navigation-panel-select:hover {
+    // background-color: #8c96d6 !important;
+}
+
+@media (max-width:900px) {
+
+    .sidebar-div {
+        display: none;
+    }
+}

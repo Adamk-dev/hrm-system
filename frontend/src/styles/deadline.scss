@@ -1,0 +1,162 @@
+@import './mixin.module.scss';
+@import './partials.scss';
+
+.Deadline_container {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid lightgray;
+
+}
+
+
+
+.calendarDiv {
+    margin: 1rem 0;
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+    margin: 0;
+
+    .calendar {
+        border: 1px solid #283686;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.Deadline_date_container {
+    @include verticallycenter;
+    padding: 10px 0;
+
+
+    .Deadline_date_box {
+        @include allCenter;
+    }
+
+    .calender_icon {
+        display: inline;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+
+    .date_heading {
+        padding: 0 15px 0 2px;
+        font-size: 15px;
+
+    }
+
+    .calendar_div {
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+
+
+
+
+        .calendar {
+            border: none;
+            height: 40px;
+            display: block;
+            width: 90%;
+            margin: 5px 0px;
+            color: grey;
+            box-shadow: -4.973px 0.523px 5.82px 0.18px rgba(2, 29, 59, 0.11);
+            border-width: 0.81px;
+            border-color: rgb(189, 186, 186);
+            border-style: solid;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            text-indent: 10px;
+            font-size: 1.2rem;
+            position: relative;
+
+
+
+            &::placeholder {
+                text-transform: capitalize;
+
+                // background-repeat: no-repeat;
+                // position: absolute;
+                // top: 10px;
+                // padding-left: 5px;
+                // right: 10px;
+                // content: url(../assets/images/arrow-down-sign-to-navigate.png);
+                // width: 20px;
+                // border-left: 1px solid black;
+
+            }
+
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .arrow_down {
+            position: absolute;
+            width: 4%;
+            top: 30%;
+            right: 12%;
+
+
+        }
+
+    }
+}
+
+.Deadline_time_container {
+    @include verticallycenter;
+
+    padding: 10px 0;
+
+
+    .Deadline_time_box {
+        @include allCenter;
+
+    }
+
+    .time_icon {
+        display: inline;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+
+    .time_heading {
+        padding: 0 15px 0 2px;
+        font-size: 15px;
+
+    }
+
+    .time_div {
+        @include allCenter;
+        flex-direction: column;
+        width: 100%;
+
+
+
+        span {
+            margin-right: 50px;
+
+        }
+
+        .start_time,
+        .end_time {
+            border: none;
+            height: 40px;
+            display: block;
+            width: 80%;
+            margin: 5px 0px;
+            color: grey;
+            box-shadow: -4.973px 0.523px 5.82px 0.18px rgba(2, 29, 59, 0.11);
+            border-width: 0.81px;
+            border-color: rgb(189, 186, 186);
+            border-style: solid;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            text-indent: 10px;
+            font-size: 1.2rem;
+            position: relative;
+        }
+    }
+
+}

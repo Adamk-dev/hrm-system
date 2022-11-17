@@ -1,0 +1,52 @@
+@import './partials.scss';
+
+.react-datepicker__header {
+    background-color: $primary-color;
+    color: white;
+
+
+
+    .react-datepicker__month-read-view {
+
+        .react-datepicker__month-read-view--selected-month {
+            margin-right: 30px !important;
+        }
+
+        .react-datepicker__month-read-view--down-arrow {
+            margin-right: 30px;
+        }
+
+    }
+
+    .react-datepicker__current-month {
+        color: white;
+
+    }
+
+    .react-datepicker__day-names {
+        .react-datepicker__day-name {
+
+            color: white;
+        }
+    }
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+    background-color: $primary-color  !important;
+}
+
+// styling for time
+.react-datepicker-time__header {
+    color: white;
+}

@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "lucidhrm",
+    "password": "lucid",
+    "database": "root@987",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

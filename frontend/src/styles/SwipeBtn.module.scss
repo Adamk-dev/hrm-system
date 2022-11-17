@@ -1,0 +1,39 @@
+@import "./mixin.module.scss";
+@import "./partials.scss";
+
+.swiperbtn{
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    background-color: $primary-color;
+    width: 150px;
+    padding:8px 12px;
+    border-radius: 30px;
+    transition: 0.3s linear;
+
+    ul{
+        @include horizontallysapce;
+        list-style: none;
+
+        li{
+            color: $white;
+            font-weight: 600;
+
+        }
+    }
+
+}
+.activeClassName{
+    border-radius: 30px;
+    padding: 5px 10px; 
+    background-color: white;
+    color: white;
+    transition: 0.3s linear;
+    margin-left: -10px;
+}
+@media screen and (max-width:950px) {
+
+    .swiperbtn{
+        top: 20px;
+    }
+}

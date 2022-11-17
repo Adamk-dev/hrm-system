@@ -1,0 +1,23 @@
+@import "./mixin.module.scss";
+
+.Background{
+    background-image: url(../assets/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+
+    .backgroundWrapper{
+        position: relative;
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 100vh;
+        max-height: 100%;
+        @include allCenter;
+
+    }
+}

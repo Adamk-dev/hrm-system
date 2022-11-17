@@ -1,0 +1,398 @@
+@import "./mixin.module.scss";
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../assets/fonts/GothamBold.ttf");
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url("../assets/fonts/GothamBook.ttf");
+}
+
+body {
+    font-family: GothamBook;
+}
+
+$primary-color: #283686;
+$secondary-color: #2eac64;
+$gray-color: #9c9b9b;
+
+// MAIN DIV CONTAINER 
+.container {
+
+    // @include allCenter;
+    // background-color: rgb(108, 108, 92);
+    width: 100%;
+
+    // MAIN GRID CONTAINER
+    .gridcon {
+
+        @include allCenter;
+
+
+
+        //    MAIN GRID ITEM
+        .griditem {
+
+            @include allCenter;
+            background-color: white;
+            flex-direction: column;
+            border: 1px solid lightgray;
+            margin-top: 3rem;
+
+
+
+
+            // PROFILE IMAGE CONTAIN
+
+            .profileitem {
+                position: relative;
+
+                .profileimg {
+
+                    border-radius: 50%;
+                    @include allCenter;
+                    width: 65%;
+                    height: auto;
+                    padding: 20px 0;
+                    margin: 0 auto;
+
+                }
+
+                // div {
+                // padding: 20px;
+                //     position: absolute;
+
+
+                .addphoto {
+                    font-size: 3.5rem !important;
+                    position: absolute;
+                    color: $primary-color ;
+                    background-color: rgb(255, 106, 0);
+                    border-radius: 100%;
+                    border: 5px solid white;
+                    top: 65%;
+                    left: 60%;
+
+                }
+
+                // }
+
+            }
+
+            //  FISRT NAME , LAST NAME CONATINER
+            .namecon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .nameitem {
+
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                    }
+
+                    Input {
+                        margin: .5rem 0 !important;
+                    }
+
+                }
+            }
+
+
+            // SKILLS CONTAINER 
+
+            .skillcon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .skillitem {
+
+                    padding: 0rem 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                        // padding: 1rem 0rem !important;
+                        // margin: 1rem 0 !important;
+
+                    }
+
+                    .stack {
+                        color: white;
+                        margin: .5rem 0;
+
+                        width: 100%;
+                        @include allCenter;
+                        flex-wrap: wrap;
+
+
+
+                    }
+
+                    .chips {
+                        background-color: $primary-color;
+                        color: white;
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+
+                        margin: .5rem .5rem;
+
+
+                    }
+
+                    .addskills {
+                        font-size: 3.5rem;
+                        color: $primary-color ;
+                        padding: 0 2rem;
+                    }
+
+                }
+            }
+
+            //  EMAIL, PHONE CONATINER
+            .emailcon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .emailitem,
+                .phoneitem {
+
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                    }
+
+                    Input {
+                        margin: .5rem 0 !important;
+                    }
+
+                }
+            }
+
+            //  NIC CONATINER
+            .niccon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .nicitem {
+
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                    }
+
+                    Input {
+                        margin: .5rem 0 !important;
+                    }
+
+                }
+            }
+
+
+            //  ADDRESS CONATINER
+            .addresscon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .addressitem {
+
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                    }
+
+                    Input {
+                        margin: .5rem 0 !important;
+                    }
+
+                }
+            }
+
+
+
+
+            //  COUNTRY , CITY CONATINER
+
+
+            .countrycon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .countryitem {
+
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+
+                    }
+
+                    div {
+                        margin: 1rem 0;
+
+                        .cityinput {
+                            margin: 0 !important;
+                        }
+                    }
+
+                }
+
+
+                .birthitem {
+
+                    padding: 0 1rem;
+                    position: relative;
+
+                    label {
+                        font-size: 1.8rem;
+
+                    }
+
+                    .calendarDiv {
+                        margin: 1rem 0;
+                        position: absolute;
+                        padding: 0;
+                        z-index: 1;
+                        margin: 0;
+
+                        .calendar {
+                            border: 1px solid #283686;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                    }
+                }
+            }
+
+
+            //  BIRTH , MATERIAL STATUS CONATINER
+
+            .marital_altnum {
+                @include allCenter;
+                // margin: .5rem 0;
+
+                .maritalitem {
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                    }
+
+                    .marital {
+                        margin: 0rem 0;
+
+                        input {
+                            margin: .5rem 0;
+                        }
+
+                    }
+
+                }
+
+                .altNumitem {
+
+                    padding: 0 1rem;
+
+                    label {
+                        font-size: 1.8rem;
+                    }
+
+                    input {
+                        margin: .5rem 0;
+                    }
+
+                }
+
+
+            }
+
+
+
+
+
+
+            //  ALTERANTIVE NUM CONATINER
+            // .altNumcon {
+            //     @include allCenter;
+            //     margin: .5rem 0;
+
+            //     .altNumitem {
+
+            //         padding: 0 1rem;
+
+            //         label {
+            //             font-size: 1.8rem;
+            //         }
+
+            //         input {
+            //             margin: .5rem 0;
+            //         }
+
+            //     }
+            // }
+
+            //  ALTERANTIVE BUTTON CONATINER
+            .btncon {
+                @include allCenter;
+                margin: .5rem 0;
+
+                .btnitem {
+
+                    padding: 0 1rem;
+                    text-align: center;
+                    padding: 2rem 0;
+
+
+                    .savebtn {
+                        background-color: $secondary-color;
+                        color: white;
+                        border-radius: 50px;
+                        font-size: 1.5rem;
+                        padding: .5rem 2.5rem;
+                        margin: 0 1rem;
+
+                    }
+
+                    .cancelbtn {
+                        background-color: $gray-color;
+                        color: white;
+                        border-radius: 50px;
+                        font-size: 1.5rem;
+                        padding: .5rem 2.5rem;
+                        margin: 0 1rem;
+                    }
+
+
+
+                }
+            }
+
+
+        }
+
+
+    }
+}
+
+@media (max-width:1536px) {
+
+    // .addphoto {
+
+    //     top: 15%;
+    //     left: 51.5%;
+
+    // }
+}
+
+// @media (max-width:1200px) {
+
+//     html {
+//         font-size: 55%;
+//     }
+// }

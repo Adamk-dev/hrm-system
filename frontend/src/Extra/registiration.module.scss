@@ -1,0 +1,109 @@
+@import "./mixin.module.scss";
+
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../assets/fonts/GothamBold.ttf");
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url("../assets/fonts/GothamBook.ttf");
+}
+
+.container {
+
+    min-width: 100%;
+    min-height: 100vh;
+    @include allCenter;
+
+
+    .Singup_container {
+        @include allCenter;
+
+        .text_box {
+            h1 {
+                font-size: 5.2rem;
+                text-transform: uppercase;
+                color: white;
+                text-align: center;
+                line-height: 10px;
+                font-family: GothamBold;
+
+             
+            }
+
+            p {
+                color: white;
+                margin-top: 3.6rem;
+                font-size: 3.0rem;
+                text-align: center;
+
+                // line-height: 24px;
+               
+            }
+        }
+
+        .register_form {
+            padding: 0px 50px;
+            background-color: white;
+            border-radius: 8px;
+
+
+            h2 {
+                font-family: GothamBook;
+                text-align: center;
+                margin: 30px 0px;
+                font-size: 3.6rem;
+
+              
+            }
+
+
+
+            .register_button {
+                width: 100%;
+                text-align: end;
+                margin: 100px 0px;
+
+                button {
+                    width: max-content;
+                    border-radius: 11px;
+                    background-color: #283686;
+                    color: white;
+                    cursor: pointer;
+                    padding: 8px 25px;
+                    border: none;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+// media querries 
+
+@media (max-width:1200px) {
+
+    .container {
+        padding: 50px 0px;
+    }
+
+    .register_form {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .container {
+        padding: 50px 0px;
+    }
+
+    .register_form {
+        margin-top: 30px;
+    }
+}

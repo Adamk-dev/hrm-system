@@ -1,0 +1,28 @@
+.input {
+    border: none;
+    height: 40px;
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    color: grey;
+    box-shadow: -4.973px 0.523px 5.82px 0.18px rgba(2, 29, 59, 0.11);
+    border-width: 0.81px;
+    border-color: rgb(189, 186, 186);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-indent: 10px;
+    font-size: 1.6rem;
+    
+  
+
+  &::placeholder {
+    text-transform: capitalize;
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+

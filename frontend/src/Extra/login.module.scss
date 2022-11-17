@@ -1,0 +1,310 @@
+@import "./mixin.module.scss";
+
+@font-face {
+  font-family: GothamBook;
+  src: url("../assets/fonts/GothamBook.ttf");
+}
+
+.login_container {
+
+  min-height: 100vh;
+  overflow: hidden;
+  @media (max-width: 1100px) {
+        padding-left: 10px;
+        padding-bottom: 10px;
+  }
+
+
+
+  .main_dev {
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    @media (max-width: 1200px) {
+      margin-left: auto;
+   }
+    @media (max-width: 900px) {
+       margin: auto;
+    }
+
+  }
+
+  .text {
+
+    text-align: center;
+    margin: 10px 0px;
+
+    h1 {
+      color: white;
+      font-size: 4.8rem;
+      font-family: GothamBook;
+      font-weight: lighter;
+      @media (max-width: 900px) {
+        font-size: 4.3rem;        
+      }
+      @media (max-width: 600px) {
+        font-size: 2.6rem;
+      }
+    }
+
+    h2 {
+      display: block;
+      color: white;
+      font-family: GothamBook;
+      font-weight: lighter;
+      font-size: 3.8rem;
+      line-height: 50px;
+      @media (max-width: 900px) {
+        font-size: 3.0rem;        
+      }
+      @media (max-width: 600px) {
+        font-size: 2.0rem;
+      }
+    }
+  }
+
+  .login_form {
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    // margin-bottom: 50px;
+    padding-bottom: 20px;
+ 
+    @include allCenter;
+
+    .form {
+      margin-top: 50px;
+      width: 100%;
+      padding: 30px 100px;
+      @media (max-width: 600px) {
+        padding: 30px 30px;
+      }
+    
+
+      label {
+        text-transform: capitalize;
+        color: rgb(49, 50, 50);
+        font-family: GothamBook;
+        font-size: 2.1rem;
+        @media (max-width: 900px) {
+          font-size: 1.6rem;        
+        }
+        @media (max-width: 600px) {
+          font-size: 1.6rem;
+        }
+      }
+
+      .email {
+        @include verticallycenter;
+        margin: 15px 0px;
+        height: 40px;
+        width: 100%;
+
+        span {
+          border-width: 0.81px;
+          border-color: rgb(189, 186, 186);
+          box-shadow: -4.973px 0.523px 5.82px 0.18px rgba(2, 29, 59, 0.11);
+          background-color: #283686;
+          height: 40px;
+          padding: 0px 10px;
+          @include verticallycenter;
+          color: white;
+
+          svg {
+            font-size: 2.4rem;
+          }
+        }
+
+        input {
+          height: 100%;
+          width: 100%;
+          font-size: 1.6rem;
+
+        }
+      }
+
+      .password_dev {
+        margin-top: 30px;
+
+        .password {
+          @include verticallycenter;
+          height: 30px;
+          width: 100%;
+          margin: 20px 0px;
+          height: 40px;
+
+          span {
+            border-width: 0.81px;
+            border-color: rgb(189, 186, 186);
+            box-shadow: -4.973px 0.523px 5.82px 0.18px rgba(2, 29, 59, 0.11);
+            background-color: #283686;
+            height: 40px;
+            padding: 0px 10px;
+            @include verticallycenter;
+            color: white;
+
+            svg {
+              font-size: 2.4rem;
+            }
+          }
+
+          input {
+            height: 100%;
+            width: 100%;
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .login_btn {
+        margin: 30px 0px;
+        @include allCenter;
+
+        button {
+          width: max-content;
+          padding: 5px 150px;
+          border: none;
+          border-radius: 25px;
+          color: white;
+          background-color: #283686;
+          text-transform: capitalize;
+          font-size: 2.4rem;
+          @media (max-width: 1200px) {
+            padding: 5px 100px;
+          }
+          @media (max-width: 900px) {
+            padding: 5px 80px;
+          }
+          @media (max-width: 600px) {
+            padding: 5px 70px;
+          }
+        }
+      }
+    }
+
+    .form_footer {
+      @include horizontallysapce;
+      
+      margin-top: 40px;
+      width: 100%;
+
+      .remember {
+      @include allCenter;
+       flex-wrap: wrap;
+       
+
+
+        span {
+          font-size: 1.6rem;
+          color: grey;
+          margin-left: 30px;
+          @media (max-width: 600px) {
+            font-size: 1.1rem;
+          }
+        }
+
+        input[type="checkbox"] {
+          position: relative;
+          cursor: pointer;
+        }
+
+        input[type="checkbox"]:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: 0;
+          left: 0;
+          background-color: #e9e9e9;
+        }
+
+        input[type="checkbox"]:checked:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: 0;
+          left: 0;
+          background-color: #283686;
+        }
+
+        input[type="checkbox"]:checked:after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 7px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          position: absolute;
+          top: 2px;
+          left: 6px;
+        }
+
+        p {
+          color: #7f7f7f;
+        }
+      }
+
+      .forgort_pass {
+        a {
+          text-decoration: none;
+          color: #1e5ca1;
+          font-weight: 500;
+          font-size: 1.6rem;
+          font-family: GothamBook;
+          @media (max-width: 600px) {
+            font-size: 1rem;
+          }
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+
+  .login_circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    top: 20%;
+    @media (max-width: 900px) {
+      width: 110px;
+      height: 110px;
+    }
+    @media (max-width: 600px) {
+      width: 80px;
+      height: 80px;
+    }
+    @include allCenter;
+    background-color: white;
+    position: absolute;
+
+    .login_circle_icon {
+      img {
+        width: 100px;
+        height: 100px;
+        @media (max-width: 900px) {
+          width: 80px;
+          height: 80px;
+        }
+        @media (max-width: 600px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+     
+    }
+  
+  }
+}
+
+
+
+

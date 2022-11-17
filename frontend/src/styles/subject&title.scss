@@ -1,0 +1,40 @@
+@import './mixin.module.scss';
+@import './partials.scss';
+
+.subject_title_container {
+    border: 1px solid lightgray;
+    padding: 10px 0;
+    @include verticallycenter;
+    justify-content: space-evenly;
+
+    .subject_container {
+        padding-left: 10px;
+
+
+        input {
+            border-left: 5px solid $primary-color;
+            width: 95%;
+            position: relative;
+        }
+
+
+    }
+
+    .title_container {
+
+        padding-left: 10px;
+
+
+        select {
+            background-color: white;
+            border-left: 5px solid $primary-color;
+            background-size: 10px;
+            position: relative;
+            width: 96%;
+
+
+
+        }
+
+    }
+}

@@ -1,0 +1,243 @@
+@import "./mixin.module.scss";
+@import "./partials.scss";
+
+.login {
+  width: 100%;
+
+  .login_top {
+    padding: 30px;
+    @include allCenter;
+    flex-direction: column;
+
+    h1,
+    h2 {
+      color: $white;
+    }
+    h1 {
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  .login_bottom {
+    height: 400px;
+    @include allCenter;
+    padding: 40px;
+
+    .login_main {
+      position: relative;
+      width: 500px;
+      background-color: $white;
+      border-radius: 12px;
+      height: 100%;
+
+      .login_logo {
+        position: absolute;
+        top: -50px;
+        left: 36%;
+        width: 90px;
+        height: 90px;
+        background-color: $white;
+        border-radius: 50%;
+        padding: 25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      form {
+        margin-top: 60px;
+        padding: 20px 80px;
+
+        .login_items {
+          margin-bottom: 40px;
+
+          span {
+            font-size: 0.9rem;
+          }
+
+          .login_input {
+            margin-top: 10px;
+            display: flex;
+
+            .loginicon {
+              width: 30px;
+              height: 30px;
+              background-color: $primary-color;
+              padding: 1px;
+              color: $white;
+              @include allCenter;
+
+              svg {
+                font-size: 1.2rem;
+              }
+            }
+
+            input {
+              @include input(0px 10px);
+              width: 100%;
+            }
+          }
+        }
+        .login_btn {
+          width: 100%;
+          @include allCenter;
+          margin-top: -10px;
+          margin-bottom: 20px;
+
+          button {
+            @include button(6px 80px, 30px);
+          }
+        }
+
+        .login_footer {
+          @include horizontallysapce;
+
+          a {
+            text-decoration: none;
+            font-size: 0.85rem;
+            color: $primary-color;
+          }
+
+          label > span > svg {
+            font-size: 1.8rem;
+            color: $gray !important;
+          }
+          label > span {
+            font-size: 0.8rem;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 20px 40px !important;
+  }
+  .login_logo {
+    left: 34% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login_logo {
+    left: 32% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  form {
+    padding: 20px !important;
+  }
+  .login_top {
+    padding: 30px 0px 50px 0px !important;
+    text-align: center;
+    h1 {
+      font-size: 1.7rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  .login_bottom {
+    padding: 20px !important;
+  }
+  .login_footer {
+    a {
+      font-size: 0.75rem !important;
+    }
+
+    label > span > svg {
+      font-size: 1.5rem !important;
+    }
+    label > span {
+      font-size: 0.7rem !important;
+    }
+  }
+  .login_logo {
+    left: 32% !important;
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+@media screen and (max-width:760px) {
+  .login_top{
+    margin-top: 50px !important;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  form {
+    padding: 20px 40px !important;
+  }
+  .login_logo {
+    left: 34% !important;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .login_logo {
+    left: 32% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  form {
+    padding: 20px !important;
+  }
+  .login_top {
+    padding: 30px 0px 50px 0px !important;
+    text-align: center;
+    h1 {
+      font-size: 1.7rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  .login_bottom {
+    padding: 20px !important;
+  }
+  .login_footer {
+    a {
+      font-size: 0.75rem !important;
+    }
+
+    label > span > svg {
+      font-size: 1.5rem !important;
+    }
+    label > span {
+      font-size: 0.7rem !important;
+    }
+  }
+  .login_logo {
+    left: 32% !important;
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .login_top {
+    h1 {
+      font-size: 1.4rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .login_footer {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .login_logo {
+    left: 28% !important;
+    width: 75px !important;
+    height: 75px !important;
+  }
+}

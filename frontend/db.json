@@ -1,0 +1,34 @@
+{
+ "progessbar" : [
+  {
+    "title": "Today Leave",
+    "info": "4/65",
+    "bg": "darkorange",
+    "width": "40%"        
+  },
+  {
+    "title": "Pending Invoice",
+    "info": "15/92",
+    "bg": "yellow",
+    "width": "45%"
+  },
+  {
+    "title": "Complete Projects",
+    "info": "85/112",
+    "bg": "green",
+    "width": "80%"
+  },
+  {
+    "title": "Open Tickets",
+    "info": "190/212",
+    "bg": "red",
+    "width": "70%"
+  },
+  {
+    "title": "Close Tickets",
+    "info": "22/212",
+    "bg": "#00a1fb",
+    "width": "20%"
+  }
+]
+}

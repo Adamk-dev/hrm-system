@@ -1,0 +1,19 @@
+@import "./mixin.module.scss";
+@import "./partials.scss";
+
+
+.skillCon {
+
+    background-color: rgba(128, 128, 128, 0.358);
+    height: 100vh;
+    @include allCenter;
+    @include positions(fixed, 0, 0, 0, 0);
+
+
+}
+
+.skillItem {
+
+    background-color: aqua;
+    padding: 5rem;
+}

@@ -1,0 +1,93 @@
+@import "./mixin.module.scss";
+@import "./partials.scss";
+
+.signup {
+  @include verticallycenter;
+
+  .signup_left {
+    flex: 1;
+    text-align: center;
+    color: $white;
+    @include allCenter;
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 2.3rem;
+    }
+    h4 {
+      font-weight: 200;
+      color: #ddd;
+      font-size: 1.3rem;
+      line-height: 1.2;
+    }
+  }
+  .signup_right {
+    flex: 3;
+    background-color: $bg-light-gray;
+    border-radius: 12px;
+    margin-left: 50px;
+    padding: 30px 10px;
+    @include allCenter;
+    flex-direction: column;
+
+    .signup_top {
+      text-align: center;
+      font-size: 0.7rem;
+      color: $gray;
+      margin-bottom: 30px;
+      margin-top: 40px;
+      h2 {
+        font-size: 22px;
+      }
+    }
+    .signup_bottom {
+      width: 80%;
+    }
+    .signup_bottom > div > div > div {
+      background-color: #fff;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .signup {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+  .signup_left {
+    margin-top: 50px !important;
+    padding: 20px;
+  }
+  .signup_right {
+    margin-left: 0px !important;
+    width: 80%;
+    margin-bottom: 20px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .signup_bottom {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .signup_right {
+    width: 100%;
+  }
+  .signup_top {
+    h2 {
+      font-size: 18px !important;
+    }
+  }
+  .signup_left {
+
+    h1 {
+      font-size: 2rem !important;
+    }
+    h4 {
+      font-size: 1.1rem !important;
+    }
+}
+}

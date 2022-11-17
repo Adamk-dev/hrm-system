@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: GothamBook;
+  src: url("./assets/fonts/GothamBook.ttf");
+}
+
+
+body {
+  font-family: GothamBook;
+  
+
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/* arrow input none  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  
+
+  /* reset */
+  /* 
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+}
+
+/* sing up form css padding  */
+

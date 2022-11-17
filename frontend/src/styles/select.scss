@@ -1,0 +1,78 @@
+select {
+	border: none;
+	height: 40px;
+	display: block;
+	width: 100%;
+	margin: 20px 0px;
+	color: grey;
+	box-shadow: -4.973px 0.523px 5.82px 0.18px rgba(2, 29, 59, 0.11);
+	border-width: 0.81px;
+	border-color: rgb(189, 186, 186);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	text-indent: 10px;
+	font-size: 1.6rem;
+	background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+	background-repeat: no-repeat;
+	background-position: calc(100% - 10px);
+	appearance: none;
+	--webkit-appearance: none;
+	--moz-appearance: none;
+
+	&:focus {
+		outline: none;
+	}
+
+
+}
+
+select.mySelectArrow {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: grey;
+	// width: 100%;
+	// padding: 10px 20px;
+	font-size: 1.6rem;
+
+	option {
+		color: #000;
+
+		border: 1px solid gray;
+		box-shadow: 1px 1px 1px grey;
+
+
+	}
+}
+
+.select {
+	&:after {
+		content: '\25BC';
+		position: absolute;
+		top: 5px;
+		right: 2%;
+		bottom: 0;
+		font-size: 10px;
+		border: 1px solid #565656;
+		background: #283686;
+		color: #fff;
+		padding: 8px 8px;
+		pointer-events: none;
+		height: 10px;
+		border-radius: 5px;
+
+
+
+	}
+
+	position: relative;
+	// width: 300px;
+}
+
+@media(max-width:600px) {
+	select.mySelectArrow {
+		font-size: 1.3rem;
+	}
+
+}
